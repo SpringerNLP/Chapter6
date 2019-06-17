@@ -7,14 +7,14 @@ This case study explores sentiment analysis using convolutional neural networks 
 ## Running the Docker Image
 The docker images for this case study are located on dockerhub. Running the commands below will automatically download and start a jupyter notebook.
 
-Run the Docker image for CPU only computation:
-```
-docker run -p 8888:8888 -v ${PWD}/embeddings:/workspace/embeddings  jimmywhitaker/chapter_6:latest
-```
 Download the embeddings files into the embeddings directory. 
 
+Run the Docker image for CPU only computation:
+```
+docker run -p 8888:8888 -v ${PWD}/embeddings:/workspace/embeddings  springernlp/chapter_6:latest
+```
 
 ## Building the Docker image
 ```
-docker build -t jimmywhitaker/chapter_6:latest .
+docker build -t chapter_6:latest .
 ```
